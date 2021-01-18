@@ -27,12 +27,13 @@
 </a>
 <div class="tocify-wrapper">
     @if($page['logo'] != false)
-    <img src="{{ $page['logo'] }}" alt="logo" class="logo" width="230px"/>
+    <a href="/"><img src="{{ $page['logo'] }}" alt="logo" class="logo" width="230px"/></a>
     @endif
     @isset($page['language_tabs'])
         <div class="lang-selector">
             @foreach($page['language_tabs'] as $lang)
-                <a href="#" data-language-name="{{ $lang }}">{{ $lang }}</a>
+                
+                href="#" data-language-name="{{ $lang }}">{{ $lang }}</a>
             @endforeach
         </div>
     @endisset
